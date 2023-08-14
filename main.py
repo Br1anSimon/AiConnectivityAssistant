@@ -2,14 +2,13 @@ from elevenlabs import set_api_key
 from elevenlabs import voices, generate, play
 import os
 import openai
-openai.api_key = ("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")
+openai.api_key = ("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")
 
 set_api_key("98cfe093485bf42de7faecbd361eaaf2")
 
 voices = voices()
 
-messages =[{"role": "system", "content": "Your name is Master Chief, also known as John-117."},
-           {"role": "user", "content": "Your name is Master Chief, also known as John-117."}]
+messages =[{"role": "system", "content": "Your name is Master Chief, also known as John-117."}]
 while True:
     message = input("User : ")
     if message:
